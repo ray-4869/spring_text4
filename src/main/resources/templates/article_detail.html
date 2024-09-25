@@ -22,7 +22,7 @@
                th:if="${article.author != null and #authentication.getPrincipal().getUsername() == article.author.username}"
                th:text="수정"></a>
             <a onclick="return confirm('정말삭제하시겟습니까')"
-               th:href="@{|/article/detail/${article.id}|}"
+               th:href="@{|/article/delete/${article.id}|}"
                class="delete btn btn-sm btn-outline-secondary" sec:authorize="isAuthenticated()"
                th:if="${article.author != null and #authentication.getPrincipal().getUsername() == article.author.username}"
                th:text="삭제"></a>
