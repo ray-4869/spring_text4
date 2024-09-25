@@ -2,14 +2,14 @@
 <nav th:replace="~{navbar :: navbarFragment}"></nav>
 <div class="container my-3">
     <table>
-        <thead>
+        <thead class="mb-3">
             <tr>
                 <th>번호</th>
                 <th>제목</th>
                 <th>작성일자</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="mb-3">
             <tr th:each="article, loop : ${articleList}">
                 <td th:text="${loop.count}"></td>
                 <td>
