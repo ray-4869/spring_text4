@@ -7,7 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class UserForm {
+public class UserCreateForm {
     @NotEmpty(message = "아이디 입력")
     @Size(min = 3, max = 20)
     private String username;
